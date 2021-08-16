@@ -3,16 +3,19 @@
 
 int main() {
 
-    int a, b, s;
+  int n; // número de elementos do vetor
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d ", &n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  int v[n];  // criando o vetor de tamanho n informado pelo usuário
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  for (int i = 0; i < n; i ++){
+    scanf("%d ", &v[i]); // preenchimento do vetor
+  }
+
+  int menor_numero = menor(v,n); // chamada da função de selecionar o menor número do vetor
+
+  printf("MENOR = %d\n", menor_numero); // impressão do menor número do vetor
 
   return(0);
 }
