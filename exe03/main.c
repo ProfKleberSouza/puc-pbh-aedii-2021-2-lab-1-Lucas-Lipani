@@ -3,16 +3,22 @@
 
 int main() {
 
-    int a, b, s;
+  int menor,maior,n; // declaração das variáveis
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf(" %d", &n); // definição do tamanho do vetor
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  int v[n]; // declaração do vetor
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  for (int i = 0; i < n; i++)
+    scanf(" %d", &v[i]); // preenchimento do vetor
+  
+  // Inicialização das variáveis que guardaram o número maior e menor
+  menor = v[0];
+  maior = v[0]; 
+
+  menor_maior(v, n, &menor, &maior); // passagem por referência dos valores
+
+  printf("MENOR = %d\nMAIOR = %d\n", menor, maior);
 
   return(0);
 }
