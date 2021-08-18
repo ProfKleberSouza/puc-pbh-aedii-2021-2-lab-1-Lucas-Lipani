@@ -1,2 +1,2 @@
 
-int somar(int n1, int n2);
+void placar_possiveis(int m, int n);

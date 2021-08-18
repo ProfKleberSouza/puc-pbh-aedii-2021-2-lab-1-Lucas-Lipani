@@ -3,16 +3,11 @@
 
 int main() {
 
-    int a, b, s;
+  int a, b;
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d %d", &a, &b); // ENTRADA DE DADOS
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  placar_possiveis(a,b);
 
   return(0);
 }

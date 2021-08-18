@@ -3,16 +3,13 @@
 
 int main() {
 
-    int a, b, s;
+  int a, b, madc;
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  scanf("%d %d", &a, &b);  // ENTRADA DE DADOS
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  madc = mdc(a, b);  // PROCESSAMENTO - EXECUTANDO A FUNCAO
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MDC = %d\n", madc);  // SAIDA - IMPRIMINDO O RESULTADO
 
   return(0);
 }
