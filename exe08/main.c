@@ -7,7 +7,7 @@ int main() {
   bool sinal;
   char texto[1000];
   
-  gets(texto);  // ENTRADA DE DADOS
+  fgets(texto,1000,stdin);  // ENTRADA DE DADOS
 
   sinal = is_palindromo(texto);
 
